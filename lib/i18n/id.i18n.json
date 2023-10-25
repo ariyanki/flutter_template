@@ -1,0 +1,38 @@
+{
+    "appName": "GGC Flutter",
+    "button_": {
+        "back": "BACK",
+        "cancel": "CANCEL",
+        "confirm": "CONFIRM",
+        "complete": "COMPLETE",
+        "close": "CLOSE",
+        "login": "LOGIN",
+        "logout": "LOGOUT",
+        "next": "NEXT",
+        "submit": "SUBMIT",
+        "signIn": "SIGN IN",
+        "yes": "YES",
+        "no": "NO",
+        "ok": "OK",
+        "edit": "EDIT"
+    },
+    "common_": {
+        "errorSnackbar": {
+            "title": "Oops!!!",
+            "content": "Terjadi kesalahan. Silakan coba lagi.",
+            "noInternetConnection": "Tidak ada koneksi internet",
+            "connectionProblem": "Sistem kami sedang mengalami gangguan jaringan, silakan mencoba kembali beberapa saat lagi atau hubungi admin kami."
+        },
+        "error_": {
+            "generalRequired": "Data wajib diisi",
+            "generalInvalid": "Data tidak valid"
+        }
+    },
+    "login_": {
+        "login": "Login",
+        "username": "Username",
+        "password": "Password",
+        "usernameIsRequired": "Silakan memasukkan Username Anda!",
+        "passwordIsRequired": "Silakan memasukkan Password Anda!"
+    }
+}

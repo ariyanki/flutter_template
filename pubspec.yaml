@@ -1,0 +1,57 @@
+name: flutter_template
+description: A GGCode Flutter project.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.2 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  get: ^4.6.5
+  get_storage: ^2.0.3
+  shared_preferences: ^2.0.11
+  cupertino_icons: ^1.0.2
+  flutter_localizations:
+    sdk: flutter
+  quiver: ^3.0.1+1
+  logger: ^1.1.0
+  flutter_screenutil: ^5.8.2
+  month_year_picker: ^0.3.0+1
+  flutter_svg: ^2.0.2
+  intl: ^0.18.0
+  flutter_gen_runner: ^5.2.0
+  flutter_native_splash: ^2.3.1
+  uni_links: ^0.5.1
+  slang: ^3.17.0
+  slang_flutter: ^3.17.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/icons/
+
+flutter_gen:
+  output: lib/gen/ # Optional (default: lib/gen/)
+  line_length: 80 # Optional (default: 80)
+
+  # Optional
+  integrations:
+    flutter_svg: true
+
+flutter_native_splash:
+  background_image: assets/images/splash_screen_background.png
+  image: assets/images/splash_screen_background.png
+  android: true
+  ios: true
+  web: false
+  android_gravity: center
+  android_12:
+    image: assets/images/splash_screen_icon.png

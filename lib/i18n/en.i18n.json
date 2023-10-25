@@ -1,0 +1,38 @@
+{
+    "appName": "GGC Flutter",
+    "button_": {
+        "back": "BACK",
+        "cancel": "CANCEL",
+        "confirm": "CONFIRM",
+        "complete": "COMPLETE",
+        "close": "CLOSE",
+        "login": "LOGIN",
+        "logout": "LOGOUT",
+        "next": "NEXT",
+        "submit": "SUBMIT",
+        "signIn": "SIGN IN",
+        "yes": "YES",
+        "no": "NO",
+        "ok": "OK",
+        "edit": "EDIT"
+    },
+    "common_": {
+        "errorSnackbar": {
+            "title": "Oops!!!",
+            "content": "An error occurred. Please try again.",
+            "noInternetConnection": "No internet connection",
+            "connectionProblem": "There are error network connection, please try again in a few moments or contact our admin."
+        },
+        "error_": {
+            "generalRequired": "Data is required",
+            "generalInvalid": "Data is invalid"
+        }
+    },
+    "login_": {
+        "login": "Login",
+        "username": "Username",
+        "password": "Password",
+        "usernameIsRequired": "Please enter your Username!",
+        "passwordIsRequired": "Please enter your Password!"
+    }
+}
