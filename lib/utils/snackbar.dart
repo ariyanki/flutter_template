@@ -2,8 +2,8 @@ import 'dart:convert';
 
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_template/themes/app_theme.dart';
 import 'package:flutter_template/utils/response_message.dart';
-import 'package:flutter_template/values/app_theme.dart';
 import 'package:get/get.dart';
 import 'package:flutter_template/i18n/strings.g.dart';
 

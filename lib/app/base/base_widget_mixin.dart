@@ -1,5 +1,5 @@
-import 'package:flutter_template/values/app_theme.dart';
-import 'package:flutter_template/values/app_theme_data.dart';
+import 'package:flutter_template/themes/app_theme.dart';
+import 'package:flutter_template/themes/app_theme_data.dart';
 import 'package:get/get.dart';
 import 'package:logger/logger.dart';
 

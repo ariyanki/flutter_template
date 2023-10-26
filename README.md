@@ -15,6 +15,16 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
-dart run slang
-fluttergen -c pubspec.yaml
-dart run flutter_native_splash:create
+Setup this tools:
+- [https://pub.dev/packages/slang]
+  - run this to generate translation code: dart run slang 
+- [https://pub.dev/packages/flutter_gen]
+  - run this to generate assets code: fluttergen -c pubspec.yaml
+- [https://pub.dev/packages/flutter_native_splash]
+  - run this to generate splash screen: dart run flutter_native_splash:create
+- [https://pub.dev/packages/flutter_launcher_icons]
+  - run this to generate launcher icon: dart run flutter_launcher_icons
+
+
+
+

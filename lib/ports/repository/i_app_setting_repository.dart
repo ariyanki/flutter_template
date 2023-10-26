@@ -1,6 +1,5 @@
 import 'dart:ui';
-
-import 'package:flutter_template/values/app_theme_data.dart';
+import 'package:flutter_template/themes/app_theme_data.dart';
 
 import 'dto/app_setting.dart';
 

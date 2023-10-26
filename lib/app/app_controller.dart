@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_template/app/app_routes.dart';
+import 'package:flutter_template/ports/clients/i_auth_client.dart';
 import 'package:flutter_template/ports/repository/dto/app_setting.dart';
 import 'package:flutter_template/ports/repository/i_app_setting_repository.dart';
-import 'package:flutter_template/values/app_theme_data.dart';
+import 'package:flutter_template/themes/app_theme_data.dart';
 import 'package:get/get.dart';
 
 abstract class AppController extends GetxController {
@@ -18,7 +20,7 @@ abstract class AppController extends GetxController {
 
 class AppControllerImpl extends AppController with WidgetsBindingObserver {
   final _appSettingRepository = Get.find<IAppSettingRepository>();
-  // final _authRepository = Get.find<AuthRepository>();
+  final _authClient = Get.find<IAuthClient>();
   final _maxInactiveTime = const Duration(minutes: 15);
   int? _timeStartPauseApp;
 
@@ -32,16 +34,13 @@ class AppControllerImpl extends AppController with WidgetsBindingObserver {
 
   @override
   void fetchTheme() {
-    themeData = _appSettingRepository.getAppThemeData()!;
     themeData = AppThemeData.light;
     update();
   }
 
   @override
   void fetchLocale() {
-    // final locale = _appSettingRepository.getLocale()!;
     const locale = Locale('id', 'ID');
-    // I18n.locale = locale;
     Get.updateLocale(locale);
   }
 
@@ -70,10 +69,10 @@ class AppControllerImpl extends AppController with WidgetsBindingObserver {
     super.didChangeAppLifecycleState(state);
     switch (state) {
       case AppLifecycleState.resumed:
-        // if (shouldLogout()) {
-        //   _authRepository.signOut();
-        //   Get.offAllNamed(Routes.LOGIN);
-        // }
+        if (shouldLogout()) {
+          _authClient.signOut();
+          Get.offAllNamed(Routes.LOGIN);
+        }
         fetchTheme();
         fetchLocale();
         break;

@@ -1,13 +1,13 @@
 import 'dart:async';
 import 'dart:io' show Platform;
 
-// import 'package:dio/dio.dart';
+import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_template/ports/enum/page_state.dart';
+import 'package:flutter_template/themes/app_theme.dart';
+import 'package:flutter_template/themes/app_theme_data.dart';
 import 'package:flutter_template/utils/snackbar.dart';
-import 'package:flutter_template/values/app_theme.dart';
-import 'package:flutter_template/values/app_theme_data.dart';
 import 'package:get/get.dart';
 import 'package:logger/logger.dart';
 
@@ -41,7 +41,7 @@ abstract class BaseController extends GetxController {
     bool showOtherErrorSnackbar = true,
     bool waitOnSuccess = false,
     Function(T response)? onSuccess,
-    // Function(DioError e)? onDioError,
+    Function(DioError e)? onDioError,
     Function(dynamic e)? onError,
     Function(dynamic e)? onAnyError,
     Function()? onDone,
@@ -59,33 +59,33 @@ abstract class BaseController extends GetxController {
       }
 
       return response;
-    // } on DioError catch (e) {
-    //   err = e;
-    //   if (onDioError != null) {
-    //     onDioError(e);
-    //   } else if (showDioErrorSnackbar) {
-    //     switch (e.type) {
-    //       case DioErrorType.other:
-    //         if (e.message.contains('SocketException')) {
-    //           SnackbarHelper.error(
-    //             key: const ValueKey('data_service_dio_error_snack_bar'),
-    //             desc: t.common_.errorSnackbar.noInternetConnection,
-    //           );
-    //         } else {
-    //           SnackbarHelper.error(
-    //             key: const ValueKey('data_service_dio_error_snack_bar'),
-    //             dioError: e,
-    //           );
-    //         }
-    //         break;
-    //       default:
-    //         SnackbarHelper.error(
-    //           key: const ValueKey('data_service_dio_error_snack_bar'),
-    //           dioError: e,
-    //         );
-    //         break;
-    //     }
-    //   }
+    } on DioError catch (e) {
+      err = e;
+      if (onDioError != null) {
+        onDioError(e);
+      } else if (showDioErrorSnackbar) {
+        switch (e.type) {
+          case DioErrorType.other:
+            if (e.message.contains('SocketException')) {
+              SnackbarHelper.error(
+                key: const ValueKey('data_service_dio_error_snack_bar'),
+                desc: t.common_.errorSnackbar.noInternetConnection,
+              );
+            } else {
+              SnackbarHelper.error(
+                key: const ValueKey('data_service_dio_error_snack_bar'),
+                dioError: e,
+              );
+            }
+            break;
+          default:
+            SnackbarHelper.error(
+              key: const ValueKey('data_service_dio_error_snack_bar'),
+              dioError: e,
+            );
+            break;
+        }
+      }
     } catch (e) {
       err = e;
       if (onError != null) {

@@ -10,9 +10,9 @@ import 'package:flutter_template/app/app_routes.dart';
 import 'package:flutter_template/flavors.dart';
 import 'package:flutter_template/app/pages/unknown/unknown_screen.dart';
 import 'package:flutter_template/i18n/strings.g.dart';
+import 'package:flutter_template/themes/app_default_theme.dart';
+import 'package:flutter_template/themes/app_theme.dart';
 import 'package:flutter_template/utils/link.dart';
-import 'package:flutter_template/values/app_default_theme.dart';
-import 'package:flutter_template/values/app_theme.dart';
 import 'package:get/get.dart';
 import 'package:month_year_picker/month_year_picker.dart';
 import 'package:uni_links/uni_links.dart';
@@ -86,9 +86,6 @@ class AppState extends State<App> {
               theme: AppDefaultTheme.theme(controller.themeData),
               supportedLocales: AppLocaleUtils.supportedLocales,
               debugShowCheckedModeBanner: FlavorConfigs.isDEV,
-              // localeResolutionCallback: i18n.resolution(
-              //   fallback: const Locale("en", "US"),
-              // ),
               builder: (context, child) => MediaQuery(
                 data: MediaQuery.of(context).copyWith(textScaleFactor: 1),
                 child: child ?? const SizedBox(),

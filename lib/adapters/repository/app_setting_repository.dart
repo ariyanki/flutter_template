@@ -5,7 +5,7 @@ import 'dart:ui';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_template/ports/repository/dto/app_setting.dart';
 import 'package:flutter_template/ports/repository/i_app_setting_repository.dart';
-import 'package:flutter_template/values/app_theme_data.dart';
+import 'package:flutter_template/themes/app_theme_data.dart';
 import 'package:get/get.dart';
 import 'package:quiver/core.dart';
 import 'package:shared_preferences/shared_preferences.dart';
