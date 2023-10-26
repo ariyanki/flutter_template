@@ -125,7 +125,7 @@ class LoginScreen extends BaseView<LoginController> {
                       t.login_.forgotPassword,
                       style: TextStyle(
                         fontSize: 10.sp,
-                        color: theme.brandingBlue,
+                        color: theme.brandingGreen,
                         fontWeight: FontWeight.w700,
                       ),
                     ),
@@ -156,7 +156,7 @@ class LoginScreen extends BaseView<LoginController> {
                             borderRadius: const BorderRadius.all(
                               Radius.circular(15),
                             ),
-                            color: AppTheme.of(context).brandingOrange,
+                            color: AppTheme.of(context).brandingYellow,
                           ),
                           height: 44,
                           width: 44,

@@ -20,6 +20,7 @@ dependencies:
   pretty_dio_logger: ^1.2.0-beta-1
   flutter_screenutil: ^5.8.2
   mocktail: ^0.3.0
+  flutter_launcher_icons: ^0.13.1
   month_year_picker: ^0.3.0+1
   flutter_svg: ^2.0.2
   intl: ^0.18.0
@@ -53,7 +54,7 @@ flutter_gen:
 
 flutter_native_splash:
   background_image: assets/images/splash_screen_background.png
-  image: assets/images/splash_screen_background.png
+  image: assets/images/splash_screen_icon.png
   android: true
   ios: true
   web: false

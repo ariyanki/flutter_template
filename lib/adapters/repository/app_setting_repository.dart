@@ -54,8 +54,6 @@ class AppSettingRepositoryImpl implements IAppSettingRepository {
     switch (themeMode) {
       case AppThemeMode.light:
         return AppThemeData.light;
-      case AppThemeMode.dark:
-        return AppThemeData.dark;
       default:
         return null;
     }

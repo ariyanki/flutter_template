@@ -63,7 +63,7 @@ class ButtonWidget extends StatelessWidget {
                     ? null
                     : Border.all(
                         width: 1,
-                        color: AppTheme.of(context).brandingBlue,
+                        color: AppTheme.of(context).brandingGreen,
                       ),
               )
           : BoxDecoration(
@@ -74,7 +74,7 @@ class ButtonWidget extends StatelessWidget {
         borderRadius: BorderRadius.circular(borderRadiusSize),
         color: isFill
             ? (enabled
-                ? buttonColor ?? AppTheme.of(context).brandingBlue
+                ? buttonColor ?? AppTheme.of(context).brandingGreen
                 : AppTheme.of(context).lightGrey1)
             : AppTheme.of(context).background,
         child: InkWell(
@@ -114,7 +114,7 @@ class ButtonWidget extends StatelessWidget {
                                         ? Colors.white
                                         : AppTheme.of(context).lightGrey2)
                                     : (enabled
-                                        ? AppTheme.of(context).brandingBlue
+                                        ? AppTheme.of(context).brandingGreen
                                         : AppTheme.of(context).lightGrey2),
                                 fontSize: fontSize,
                                 fontWeight: fontWeight,

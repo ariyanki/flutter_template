@@ -115,7 +115,7 @@ class TextFieldWithIconWidget extends StatelessWidget with BaseWidgetMixin {
     return OutlineInputBorder(
       borderRadius: BorderRadius.circular(6.0),
       borderSide: BorderSide(
-        color: theme.brandingOrange,
+        color: theme.brandingYellow,
         width: 1,
       ),
     );
@@ -125,7 +125,7 @@ class TextFieldWithIconWidget extends StatelessWidget with BaseWidgetMixin {
     return CustomOutlineInputBorder(
       borderRadius: BorderRadius.circular(6),
       borderSide: BorderSide(
-        color: theme.brandingOrange,
+        color: theme.brandingYellow,
         width: 1,
       ),
     );
@@ -144,13 +144,13 @@ class TextFieldWithIconWidget extends StatelessWidget with BaseWidgetMixin {
           bottomLeft: Radius.circular(6),
         ),
         border: Border.all(
-          color: theme.brandingOrange,
+          color: theme.brandingYellow,
         ),
         gradient: LinearGradient(
           colors: [
             theme.gradientOrange2,
             theme.gradientOrange1,
-            theme.brandingOrange,
+            theme.brandingYellow,
           ],
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
