@@ -33,6 +33,9 @@
         "username": "Username",
         "password": "Password",
         "usernameIsRequired": "Silakan memasukkan Username Anda!",
-        "passwordIsRequired": "Silakan memasukkan Password Anda!"
+        "passwordIsRequired": "Silakan memasukkan Password Anda!",
+        "forgotPassword": "Lupa Password?",
+        "register": "Daftar Akun",
+        "authenticationDescription": "Please authenticate to login"
     }
 }

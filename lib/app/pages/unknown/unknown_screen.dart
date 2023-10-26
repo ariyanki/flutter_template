@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_template/app/core/utils/link.dart';
 import 'package:flutter_template/gen/assets.gen.dart';
-
-import '../../core/utils/size_config.dart';
+import 'package:flutter_template/utils/link.dart';
+import 'package:flutter_template/utils/size_config.dart';
 
 class UnknownScreen extends StatefulWidget {
   const UnknownScreen({Key? key}) : super(key: key);

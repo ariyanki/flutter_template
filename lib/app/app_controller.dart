@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_template/ports/repository/dto/app_setting.dart';
+import 'package:flutter_template/ports/repository/i_app_setting_repository.dart';
+import 'package:flutter_template/values/app_theme_data.dart';
 import 'package:get/get.dart';
-
-import 'core/model/app_setting.dart';
-import 'core/values/app_theme_data.dart';
-import 'data/repository/app_setting_repository.dart';
 
 abstract class AppController extends GetxController {
   AppThemeData themeData = AppThemeData.light;
@@ -18,7 +17,7 @@ abstract class AppController extends GetxController {
 }
 
 class AppControllerImpl extends AppController with WidgetsBindingObserver {
-  final _appSettingRepository = Get.find<AppSettingRepository>();
+  final _appSettingRepository = Get.find<IAppSettingRepository>();
   // final _authRepository = Get.find<AuthRepository>();
   final _maxInactiveTime = const Duration(minutes: 15);
   int? _timeStartPauseApp;

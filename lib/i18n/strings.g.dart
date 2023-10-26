@@ -4,9 +4,9 @@
 /// To regenerate, run: `dart run slang`
 ///
 /// Locales: 1
-/// Strings: 26
+/// Strings: 29
 ///
-/// Built on 2023-10-25 at 04:00 UTC
+/// Built on 2023-10-26 at 04:04 UTC
 
 // coverage:ignore-file
 // ignore_for_file: type=lint
@@ -201,6 +201,9 @@ class _StringsLoginEn {
 	String get password => 'Password';
 	String get usernameIsRequired => 'Silakan memasukkan Username Anda!';
 	String get passwordIsRequired => 'Silakan memasukkan Password Anda!';
+	String get forgotPassword => 'Lupa Password?';
+	String get register => 'Daftar Akun';
+	String get authenticationDescription => 'Please authenticate to login';
 }
 
 // Path: common_.errorSnackbar
@@ -259,6 +262,9 @@ extension on _StringsEn {
 			case 'login_.password': return 'Password';
 			case 'login_.usernameIsRequired': return 'Silakan memasukkan Username Anda!';
 			case 'login_.passwordIsRequired': return 'Silakan memasukkan Password Anda!';
+			case 'login_.forgotPassword': return 'Lupa Password?';
+			case 'login_.register': return 'Daftar Akun';
+			case 'login_.authenticationDescription': return 'Please authenticate to login';
 			default: return null;
 		}
 	}

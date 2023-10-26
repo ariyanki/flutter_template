@@ -5,19 +5,17 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:get/get.dart';
-
-import 'package:flutter_template/app/core/utils/link.dart';
-import 'package:flutter_template/app/core/values/app_default_theme.dart';
+import 'package:flutter_template/app/app_controller.dart';
+import 'package:flutter_template/app/app_routes.dart';
+import 'package:flutter_template/flavors.dart';
 import 'package:flutter_template/app/pages/unknown/unknown_screen.dart';
+import 'package:flutter_template/i18n/strings.g.dart';
+import 'package:flutter_template/utils/link.dart';
+import 'package:flutter_template/values/app_default_theme.dart';
+import 'package:flutter_template/values/app_theme.dart';
+import 'package:get/get.dart';
 import 'package:month_year_picker/month_year_picker.dart';
 import 'package:uni_links/uni_links.dart';
-
-import '/app/routes/app_pages.dart';
-import '../flavors/flavors.dart';
-import '../i18n/strings.g.dart';
-import 'app_controller.dart';
-import 'core/values/app_theme.dart';
 
 class App extends StatefulWidget {
   const App({Key? key}) : super(key: key);
@@ -73,8 +71,8 @@ class AppState extends State<App> {
             appTheme: controller.themeData,
             child: GetMaterialApp(
               title: FlavorConfigs.name,
-              initialRoute: AppPages.INITIAL,
-              getPages: AppPages.routes,
+              initialRoute: AppRoutes.INITIAL,
+              getPages: AppRoutes.routes,
               unknownRoute: GetPage(
                 name: Routes.UNKNOWN,
                 page: () => const UnknownScreen(),

@@ -17,6 +17,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/account.svg
   SvgGenImage get account => const SvgGenImage('assets/icons/account.svg');
 
+  /// File path: assets/icons/back.svg
+  SvgGenImage get back => const SvgGenImage('assets/icons/back.svg');
+
   /// File path: assets/icons/fingerprint.svg
   SvgGenImage get fingerprint =>
       const SvgGenImage('assets/icons/fingerprint.svg');
@@ -37,18 +40,30 @@ class $AssetsIconsGen {
 
   /// List of all assets
   List<SvgGenImage> get values =>
-      [account, fingerprint, padlock, passwordHide, passwordShow, person];
+      [account, back, fingerprint, padlock, passwordHide, passwordShow, person];
 }
 
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
+  /// File path: assets/images/empty_data.png
+  AssetGenImage get emptyData =>
+      const AssetGenImage('assets/images/empty_data.png');
+
+  /// File path: assets/images/logo.png
+  AssetGenImage get logo => const AssetGenImage('assets/images/logo.png');
+
   /// File path: assets/images/splash_screen_background.png
   AssetGenImage get splashScreenBackground =>
       const AssetGenImage('assets/images/splash_screen_background.png');
 
+  /// File path: assets/images/splash_screen_icon.png
+  AssetGenImage get splashScreenIcon =>
+      const AssetGenImage('assets/images/splash_screen_icon.png');
+
   /// List of all assets
-  List<AssetGenImage> get values => [splashScreenBackground];
+  List<AssetGenImage> get values =>
+      [emptyData, logo, splashScreenBackground, splashScreenIcon];
 }
 
 class Assets {

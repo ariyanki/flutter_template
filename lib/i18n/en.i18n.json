@@ -33,6 +33,9 @@
         "username": "Username",
         "password": "Password",
         "usernameIsRequired": "Please enter your Username!",
-        "passwordIsRequired": "Please enter your Password!"
+        "passwordIsRequired": "Please enter your Password!",
+        "forgotPassword": "Forgot Password?",
+        "register": "Register Account",
+        "authenticationDescription": "Please authenticate to login"
     }
 }
