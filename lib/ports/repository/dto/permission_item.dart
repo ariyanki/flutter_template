@@ -20,25 +20,4 @@ class PermissionItem {
     'actions': actions.map((e) => e.toString()).toList(),
     'resource': resource
   };
-
-  // PermissionItem clone() => PermissionItem(
-  //   actions: actions.toList(),
-  //   resource: resource
-  // );
-  //
-  //
-  // PermissionItem copyWith({
-  //   List<String>? actions,
-  //   String? resource
-  // }) => PermissionItem(
-  //   actions: actions ?? this.actions,
-  //   resource: resource ?? this.resource,
-  // );
-  //
-  // @override
-  // bool operator ==(Object other) => identical(this, other)
-  //   || other is PermissionItem && actions == other.actions && resource == other.resource;
-  //
-  // @override
-  // int get hashCode => actions.hashCode ^ resource.hashCode;
 }

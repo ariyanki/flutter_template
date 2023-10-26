@@ -140,7 +140,6 @@ class LoginController extends BaseController {
         options: const AuthenticationOptions(biometricOnly: true),
       );
       if (didAuthenticate) {
-        // Get.offAllNamed(Routes.LANDING);
         if (Get.isRegistered<LandingController>()) {
           Get.back(result: true);
         } else {

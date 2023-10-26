@@ -24,25 +24,4 @@ class ResponseUserAccountDetails {
     'message': message.toJson(),
     'data': data?.toJson()
   };
-
-  ResponseUserAccountDetails clone() => ResponseUserAccountDetails(
-    message: message.clone(),
-    data: data?.clone()
-  );
-
-
-  ResponseUserAccountDetails copyWith({
-    Message? message,
-    Optional<ResponseUserAccountDetailsData?>? data
-  }) => ResponseUserAccountDetails(
-    message: message ?? this.message,
-    data: checkOptional(data, () => this.data),
-  );
-
-  @override
-  bool operator ==(Object other) => identical(this, other)
-    || other is ResponseUserAccountDetails && message == other.message && data == other.data;
-
-  @override
-  int get hashCode => message.hashCode ^ data.hashCode;
 }
