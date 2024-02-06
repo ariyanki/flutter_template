@@ -51,7 +51,6 @@ class LoginController extends BaseController {
           () => _authClient.signIn(RequestAuthSignIn(
         username: usernameController.text.trim(),
         password: passwordController.text.trim(),
-        rememberMe: true,
       )),
       waitOnSuccess: true,
       onSuccess: (response) async {

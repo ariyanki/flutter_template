@@ -8,7 +8,7 @@ abstract class IAuthClient {
 
   Future<void> signOut();
 
-  Future<void> requestOTP();
+  // Future<void> requestOTP();
 
   Future<ResponseAuthRefresh> refreshToken(RequestAuthRefresh data);
 }

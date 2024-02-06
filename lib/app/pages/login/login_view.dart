@@ -15,8 +15,8 @@ import 'package:flutter_template/i18n/strings.g.dart';
 
 import 'login_controller.dart';
 
-class LoginScreen extends BaseView<LoginController> {
-  const LoginScreen({Key? key}) : super(key: key);
+class LoginView extends BaseView<LoginController> {
+  const LoginView({Key? key}) : super(key: key);
 
   @override
   Widget buildScreen(BuildContext context) {

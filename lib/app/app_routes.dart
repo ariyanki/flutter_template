@@ -2,7 +2,7 @@ import 'package:flutter_template/app/pages/landing/landing_binding.dart';
 import 'package:flutter_template/app/pages/landing/landing_screen.dart';
 import 'package:get/get.dart';
 import 'pages/login/login_binding.dart';
-import 'pages/login/login_screen.dart';
+import 'pages/login/login_view.dart';
 
 abstract class Routes {
   static const LOGIN = '/login';
@@ -22,7 +22,7 @@ class AppRoutes {
   static final _commonPages = [
     GetPage(
       name: Routes.LOGIN,
-      page: () => const LoginScreen(),
+      page: () => const LoginView(),
       binding: LoginBinding(),
     ),
     GetPage(

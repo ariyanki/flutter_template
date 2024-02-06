@@ -8,7 +8,7 @@ import 'package:flutter_template/app/app_routes.dart';
 import 'package:flutter_template/flavors.dart';
 import 'package:flutter_template/ports/clients/dto/auth/refresh/request_auth_refresh.dart';
 import 'package:flutter_template/ports/clients/i_auth_client.dart';
-import 'package:flutter_template/ports/enum/ServiceType.dart';
+import 'package:flutter_template/ports/enum/service_type.dart';
 import 'package:flutter_template/ports/repository/i_user_credential_repository.dart';
 import 'package:flutter_template/utils/snackbar.dart';
 import 'package:flutter_template/utils/time.dart';
